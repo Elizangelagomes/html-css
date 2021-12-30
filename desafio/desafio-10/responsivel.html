@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+/* margin-auto centraliza a caixa assim qdo se ta numa tela grande nao "estica o texto" e do mesmo jeito qdo se ta numa tela pequena  omin-width e max limita o tamano que acx atinge antes de comecar a quebra no google chrome tem uma ferramenta chamada window resizer que mostra como uma regua  */
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 280px;
+            max-width: 800px;
+            margin: auto;
+        }
+/* colocando a imagem em width: 100% voce faz com que ela se encaixa para todos os tamanhos de tela , porem o gustavo sugere ter duas imagens e usar a pequena, la em imagem envelopa com picture e poem source indicando o max-width e no srcset vc coloca a foto que ja ta salva no seu arquivo menor   */
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, necessitatibus? Iusto incidunt tempore molestiae assumenda officiis ipsam ipsa maiores voluptas! Consequuntur veritatis iusto officia vitae asperiores. Officia laudantium quo Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus enim ipsum debitis repellat voluptatum ab. Vero perspiciatis laudantium animi omnis illo non, voluptas esse ex quas delectus eos aliquid magni.</p>
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="Irina Blok"></picture>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, necessitatibus? Iusto incidunt tempore molestiae assumenda officiis ipsam ipsa maiores voluptas! Consequuntur veritatis iusto officia vitae asperiores. Officia laudantium quo Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus enim ipsum debitis repellat voluptatum ab. Vero perspiciatis laudantium animi omnis illo non, voluptas esse ex quas delectus eos aliquid magni.</p>
+    </main>
+</body>
+</html>
